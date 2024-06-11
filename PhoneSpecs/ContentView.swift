@@ -24,9 +24,9 @@ struct BottomBar: View {
                 Image(systemName: "iphone.sizes");
                 Text("Brand")
             }
-            PopularScreen().tabItem {
+            InterestScreen().tabItem {
                 Image(systemName: "flame");
-                Text("Popular")
+                Text("Interest")
             }
             HomeScreen().tabItem {
                 Image(systemName: "person.circle");
@@ -38,5 +38,4 @@ struct BottomBar: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Providers(apiService:APIService.shared))
 }

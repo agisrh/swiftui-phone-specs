@@ -9,8 +9,6 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    @EnvironmentObject var providers: Providers
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -32,6 +30,6 @@ struct HomeScreen: View {
     }
 }
 
-#Preview {
-    HomeScreen().environmentObject(Providers(apiService: APIService.shared))
-}
+//#Preview {
+//    HomeScreen().environmentObject(Providers(apiService: APIService.shared))
+//}

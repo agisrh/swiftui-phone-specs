@@ -30,13 +30,12 @@ extension URL {
     
     // list brands
     static var brands: URL {
-        //return URL(string: "https://phone-specs-api-2.azharimm.dev/brands")!
         return URL(string: "/brands", relativeTo: Self.default)!.absoluteURL
     }
     
     // list phone by brand
-    static func phoneByBrand(_ brandSlug: String, page: Int?) -> URL {
-        return URL(string: "/brands/\(brandSlug)?page=\(String(describing: page))", relativeTo: Self.default)!
+    static func phoneByBrand(_ url: String, page: Int?) -> URL {
+        return URL(string: "\(url)?page=\(String(describing: page))")!.absoluteURL
     }
     
     // phone spesification
@@ -56,7 +55,7 @@ extension URL {
     
     // top by interest
     static var topByInterest: URL {
-        URL(string: "/top-by-interest", relativeTo: Self.default)!
+        return URL(string: "/top-by-interest", relativeTo: Self.default)!.absoluteURL
     }
     
     // top by fans

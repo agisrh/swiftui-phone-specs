@@ -1,17 +1,17 @@
 //
-//  Providers.swift
+//  BrandViewModel.swift
 //  PhoneSpecs
 //
-//  Created by Agis on 07/06/24.
+//  Created by Agis on 11/06/24.
 //
 
 import Foundation
 
-@MainActor
-class Providers: ObservableObject {
+class BrandViewModel : ObservableObject {
     
-    @Published var brandResponse: BrandResponse = BrandResponse(status: true, brands: [])
     var apiService: APIService
+    @Published var isLoading: Bool = true
+    @Published var brandResponse: BrandResponse = BrandResponse(status: true, brands: [])
     
     init(apiService: APIService) {
         self.apiService = apiService
@@ -20,5 +20,6 @@ class Providers: ObservableObject {
     func getBrands() async throws {
         let resource = Resource(url: URL.brands, modelType: BrandResponse.self)
         brandResponse = try await apiService.load(resource)
+        isLoading = false
     }
 }
