@@ -32,10 +32,10 @@ extension URL {
     static var brands: URL {
         return URL(string: "/brands", relativeTo: Self.default)!.absoluteURL
     }
-    
+
     // list phone by brand
-    static func phoneByBrand(_ url: String, page: Int?) -> URL {
-        return URL(string: "\(url)?page=\(String(describing: page))")!.absoluteURL
+    static func phoneByBrand(_ url: String) -> URL {
+        return URL(string: url)!.absoluteURL
     }
     
     // phone spesification

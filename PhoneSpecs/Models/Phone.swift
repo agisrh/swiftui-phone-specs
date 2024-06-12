@@ -22,8 +22,8 @@ struct PhoneResponse: Codable {
 // Phone Base Data Model
 struct PhoneBaseData: Codable {
     let title: String
-    var currentPage: Int
-    var lastPage: Int
+    let currentPage: Int
+    let lastPage: Int
     let phones: [Phone]
     
     enum CodingKeys: String, CodingKey {
@@ -48,8 +48,9 @@ extension PhoneBaseData {
 
 
 // List Phone Model
-struct Phone: Codable, Identifiable {
-    let id = UUID()
+var phoneId: Int = 1
+struct Phone: Codable {
+    let id: Int
     let brand: String
     let phoneName: String
     let slug: String
@@ -70,11 +71,12 @@ extension Phone {
     init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        
+        self.id = phoneId
         brand = try values.decode(String.self, forKey: .brand)
         phoneName = try values.decode(String.self, forKey: .phoneName)
         slug = try values.decode(String.self, forKey: .slug)
         image = try values.decode(String.self, forKey: .image)
         detail = try values.decode(String.self, forKey: .detail)
+        phoneId += 1
     }
 }

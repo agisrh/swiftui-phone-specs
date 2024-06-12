@@ -15,7 +15,7 @@ struct InterestScreen: View {
     var body: some View {
         ScrollView{
             LazyVGrid(columns: adaptiveColumn, spacing: 20) {
-                ForEach(interestVM.response.data.phones) { data in
+                ForEach(interestVM.response.data.phones, id: \.self.id) { data in
                     Text(String(data.phoneName))
                         .frame(width: 150, height: 150, alignment: .center)
                         .background(.blue)
@@ -29,7 +29,9 @@ struct InterestScreen: View {
                     do {
                         try await interestVM.getInterestPhone()
                     } catch {
-                        print(error.localizedDescription)
+                        let image = UIImageView(image: UIImage(systemName: "gamecontroller.fill"))
+                        NotificationPresenter.shared.present("Player II", subtitle: "Connected")
+                        NotificationPresenter.shared.displayLeftView(image)
                     }
                 }
             }

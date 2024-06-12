@@ -10,7 +10,7 @@ import Foundation
 class BrandViewModel : ObservableObject {
     
     var apiService: APIService
-    @Published var isLoading: Bool = true
+    @Published var isLoading = true
     @Published var brandResponse: BrandResponse = BrandResponse(status: true, brands: [])
     
     init(apiService: APIService) {

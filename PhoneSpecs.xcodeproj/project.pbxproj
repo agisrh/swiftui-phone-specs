@@ -22,6 +22,17 @@
 		A69E1E0B2C18493200B3C376 /* InterestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E1E0A2C18493200B3C376 /* InterestScreen.swift */; };
 		A69E1E0D2C184DA100B3C376 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E1E0C2C184DA100B3C376 /* Interest.swift */; };
 		A69E1E112C1851EB00B3C376 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */; };
+		A6DD44852C1978B20064866B /* PhoneItemShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44842C1978B20064866B /* PhoneItemShimmer.swift */; };
+		A6DD44872C1983760064866B /* PhoneItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44862C1983760064866B /* PhoneItem.swift */; };
+		A6DD44AD2C19A6540064866B /* DiscoveryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A12C19A6540064866B /* DiscoveryHelper.swift */; };
+		A6DD44AE2C19A6540064866B /* NotificationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A22C19A6540064866B /* NotificationAnimator.swift */; };
+		A6DD44AF2C19A6540064866B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A32C19A6540064866B /* NotificationView.swift */; };
+		A6DD44B02C19A6540064866B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A42C19A6540064866B /* NotificationViewController.swift */; };
+		A6DD44B12C19A6540064866B /* NotificationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A52C19A6540064866B /* NotificationWindow.swift */; };
+		A6DD44B22C19A6540064866B /* StyleCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A62C19A6540064866B /* StyleCache.swift */; };
+		A6DD44B32C19A6540064866B /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A82C19A6540064866B /* NotificationPresenter.swift */; };
+		A6DD44B42C19A6540064866B /* NotificationPresenterLegacyOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A92C19A6540064866B /* NotificationPresenterLegacyOverlay.swift */; };
+		A6DD44B52C19A6540064866B /* NotificationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44AA2C19A6540064866B /* NotificationStyle.swift */; };
 		A6E5F8D32C12A5B0006FC8A9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5F8D22C12A5B0006FC8A9 /* HomeScreen.swift */; };
 		A6E5F8D82C12A825006FC8A9 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5F8D72C12A825006FC8A9 /* UserProfile.swift */; };
 		A6E5F8DC2C12BCD1006FC8A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E5F8DB2C12BCD1006FC8A9 /* ContentView.swift */; };
@@ -44,6 +55,17 @@
 		A69E1E0A2C18493200B3C376 /* InterestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestScreen.swift; sourceTree = "<group>"; };
 		A69E1E0C2C184DA100B3C376 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		A6DD44842C1978B20064866B /* PhoneItemShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneItemShimmer.swift; sourceTree = "<group>"; };
+		A6DD44862C1983760064866B /* PhoneItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneItem.swift; sourceTree = "<group>"; };
+		A6DD44A12C19A6540064866B /* DiscoveryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryHelper.swift; sourceTree = "<group>"; };
+		A6DD44A22C19A6540064866B /* NotificationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAnimator.swift; sourceTree = "<group>"; };
+		A6DD44A32C19A6540064866B /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A6DD44A42C19A6540064866B /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		A6DD44A52C19A6540064866B /* NotificationWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWindow.swift; sourceTree = "<group>"; };
+		A6DD44A62C19A6540064866B /* StyleCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleCache.swift; sourceTree = "<group>"; };
+		A6DD44A82C19A6540064866B /* NotificationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		A6DD44A92C19A6540064866B /* NotificationPresenterLegacyOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPresenterLegacyOverlay.swift; sourceTree = "<group>"; };
+		A6DD44AA2C19A6540064866B /* NotificationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationStyle.swift; sourceTree = "<group>"; };
 		A6E5F8D22C12A5B0006FC8A9 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		A6E5F8D72C12A825006FC8A9 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		A6E5F8DB2C12BCD1006FC8A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,9 +101,8 @@
 		A6778E2E2C119C0E00F0D196 /* PhoneSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				A69E1E082C1847D500B3C376 /* InterestViewModel.swift */,
-				A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */,
-				A69E1E042C183CB600B3C376 /* BrandViewModel.swift */,
+				A6DD44AC2C19A6540064866B /* Toast */,
+				A6DD44882C1998A70064866B /* ViewModels */,
 				A6E5F8D62C12A80E006FC8A9 /* Widgets */,
 				A6E5F8D12C129FE2006FC8A9 /* Screens */,
 				A6778E442C11A44C00F0D196 /* Models */,
@@ -129,6 +150,48 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A6DD44882C1998A70064866B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A69E1E042C183CB600B3C376 /* BrandViewModel.swift */,
+				A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */,
+				A69E1E082C1847D500B3C376 /* InterestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A6DD44A72C19A6540064866B /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD44A12C19A6540064866B /* DiscoveryHelper.swift */,
+				A6DD44A22C19A6540064866B /* NotificationAnimator.swift */,
+				A6DD44A32C19A6540064866B /* NotificationView.swift */,
+				A6DD44A42C19A6540064866B /* NotificationViewController.swift */,
+				A6DD44A52C19A6540064866B /* NotificationWindow.swift */,
+				A6DD44A62C19A6540064866B /* StyleCache.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		A6DD44AB2C19A6540064866B /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD44A82C19A6540064866B /* NotificationPresenter.swift */,
+				A6DD44A92C19A6540064866B /* NotificationPresenterLegacyOverlay.swift */,
+				A6DD44AA2C19A6540064866B /* NotificationStyle.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		A6DD44AC2C19A6540064866B /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD44A72C19A6540064866B /* Private */,
+				A6DD44AB2C19A6540064866B /* Public */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		A6E5F8D12C129FE2006FC8A9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +208,8 @@
 			children = (
 				A6E5F8D72C12A825006FC8A9 /* UserProfile.swift */,
 				A69E1DFD2C18038900B3C376 /* Spinner.swift */,
+				A6DD44842C1978B20064866B /* PhoneItemShimmer.swift */,
+				A6DD44862C1983760064866B /* PhoneItem.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -165,6 +230,8 @@
 			dependencies = (
 			);
 			name = PhoneSpecs;
+			packageProductDependencies = (
+			);
 			productName = PhoneSpecs;
 			productReference = A6778E2C2C119C0E00F0D196 /* PhoneSpecs.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +260,8 @@
 				Base,
 			);
 			mainGroup = A6778E232C119C0E00F0D196;
+			packageReferences = (
+			);
 			productRefGroup = A6778E2D2C119C0E00F0D196 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,20 +288,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6DD44B12C19A6540064866B /* NotificationWindow.swift in Sources */,
 				A69E1DFE2C18038900B3C376 /* Spinner.swift in Sources */,
+				A6DD44B52C19A6540064866B /* NotificationStyle.swift in Sources */,
 				A69E1E112C1851EB00B3C376 /* PhoneViewModel.swift in Sources */,
+				A6DD44AF2C19A6540064866B /* NotificationView.swift in Sources */,
 				A6778E302C119C0E00F0D196 /* PhoneSpecsApp.swift in Sources */,
 				A6E5F8D32C12A5B0006FC8A9 /* HomeScreen.swift in Sources */,
 				A69E1E052C183CB600B3C376 /* BrandViewModel.swift in Sources */,
 				A6E5F8DC2C12BCD1006FC8A9 /* ContentView.swift in Sources */,
 				A69E1E022C18292100B3C376 /* Phone.swift in Sources */,
+				A6DD44B42C19A6540064866B /* NotificationPresenterLegacyOverlay.swift in Sources */,
+				A6DD44AD2C19A6540064866B /* DiscoveryHelper.swift in Sources */,
 				A6E5F8D82C12A825006FC8A9 /* UserProfile.swift in Sources */,
 				A69E1E0D2C184DA100B3C376 /* Interest.swift in Sources */,
+				A6DD44872C1983760064866B /* PhoneItem.swift in Sources */,
+				A6DD44B02C19A6540064866B /* NotificationViewController.swift in Sources */,
+				A6DD44AE2C19A6540064866B /* NotificationAnimator.swift in Sources */,
 				A6778E432C11A3FA00F0D196 /* APIService.swift in Sources */,
+				A6DD44B22C19A6540064866B /* StyleCache.swift in Sources */,
 				A6778E462C11A59900F0D196 /* Brand.swift in Sources */,
 				A69E1E092C1847D500B3C376 /* InterestViewModel.swift in Sources */,
 				A62861852C16FF63000A6F5E /* BrandScreen.swift in Sources */,
 				A6778E402C119EE600F0D196 /* URL.swift in Sources */,
+				A6DD44852C1978B20064866B /* PhoneItemShimmer.swift in Sources */,
+				A6DD44B32C19A6540064866B /* NotificationPresenter.swift in Sources */,
 				A69E1E0B2C18493200B3C376 /* InterestScreen.swift in Sources */,
 				A69E1E002C18270800B3C376 /* PhoneListScreen.swift in Sources */,
 			);
