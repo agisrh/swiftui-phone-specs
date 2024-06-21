@@ -20,8 +20,8 @@ class InterestViewModel : ObservableObject {
     }
     
     func getInterestPhone() async throws {
-        print(URL.topByInterest)
         let resource = Resource(url: URL.topByInterest, modelType: InterestResponse.self)
         response = try await apiService.load(resource)
+        isLoading = false
     }
 }

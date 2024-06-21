@@ -20,7 +20,7 @@ struct PhoneListScreen: View {
     var body: some View {
         ZStack {
             // List phone
-            ScrollView{
+            ScrollView(showsIndicators: false){
                 LazyVGrid(columns: adaptiveColumn, spacing: 20) {
                     
                     // Loading
@@ -31,7 +31,11 @@ struct PhoneListScreen: View {
                     }
                     
                     ForEach(Array(zip(searchPhone.indices, phoneVM.phones)), id: \.0) { index, data in
-                        PhoneItem(title: data.phoneName, subtitle: data.brand, urlImage: data.image)
+                        NavigationLink(destination: {
+                            PhoneScreen(url: data.detail)
+                        }) {
+                            PhoneItem(title: data.phoneName, subtitle: data.brand, urlImage: data.image)
+                        }
                             .onAppear(){
                             Task {
                                 do {

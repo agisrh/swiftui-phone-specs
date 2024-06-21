@@ -50,7 +50,7 @@ extension URL {
     
     // latest
     static var latest: URL {
-        URL(string: "/latest", relativeTo: Self.default)!
+        URL(string: "/latest", relativeTo: Self.default)!.absoluteURL
     }
     
     // top by interest
@@ -60,6 +60,6 @@ extension URL {
     
     // top by fans
     static var topByFans: URL {
-        URL(string: "/top-by-fans", relativeTo: Self.default)!
+        URL(string: "/top-by-fans", relativeTo: Self.default)!.absoluteURL
     }
 }

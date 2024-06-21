@@ -1,16 +1,16 @@
 //
-//  Phone.swift
+//  Popular.swift
 //  PhoneSpecs
 //
-//  Created by Agis on 11/06/24.
+//  Created by Agis on 21/06/24.
 //
 
 import Foundation
 
-// Phone Response Model
-struct InterestResponse: Codable {
+// Popular Response Model
+struct PopularResponse: Codable {
     let status: Bool
-    let data: InterestBaseData
+    let data: PopularBaseData
     
     enum CodingKeys: String, CodingKey {
         case status
@@ -19,10 +19,10 @@ struct InterestResponse: Codable {
 }
 
 
-// Phone Base Data Model
-struct InterestBaseData: Codable {
+// Popular Base Data Model
+struct PopularBaseData: Codable {
     let title: String
-    let phones: [Interest]
+    let phones: [Popular]
     
     enum CodingKeys: String, CodingKey {
         case title
@@ -30,43 +30,43 @@ struct InterestBaseData: Codable {
     }
 }
 
-extension InterestBaseData {
+extension PopularBaseData {
     init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         title = try values.decode(String.self, forKey: .title)
-        phones = try values.decode([Interest].self, forKey: .phones)
+        phones = try values.decode([Popular].self, forKey: .phones)
     }
 }
 
 
 // List Phone Model
-var interestId: Int = 1
-struct Interest: Codable {
+var popularId: Int = 1
+struct Popular: Codable {
     let id: Int
     let phoneName: String
     let slug: String
-    let hits: Int
+    let favorites: Int
     let detail: String
     
     enum CodingKeys: String, CodingKey {
         case phoneName = "phone_name"
         case slug
-        case hits
+        case favorites
         case detail
     }
 }
 
 
-extension Interest {
+extension Popular {
     init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.id = interestId
         phoneName = try values.decode(String.self, forKey: .phoneName)
         slug = try values.decode(String.self, forKey: .slug)
-        hits = try values.decode(Int.self, forKey: .hits)
+        favorites = try values.decode(Int.self, forKey: .favorites)
         detail = try values.decode(String.self, forKey: .detail)
         interestId += 1
     }

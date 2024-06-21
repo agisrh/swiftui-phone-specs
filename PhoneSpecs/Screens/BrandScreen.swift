@@ -30,11 +30,11 @@ struct BrandScreen: View {
                                 Spacer()
                                 ZStack {
                                     Circle()
-                                        .foregroundColor(Color("ColorGreen").opacity(0.20))
+                                        .foregroundColor(.colorGreen.opacity(0.20))
                                         .frame(width: 25, height: 25)
                                     
                                     Text("\(brand.deviceCount)")
-                                        .foregroundColor(Color("ColorGreen"))
+                                        .foregroundColor(.colorGreen)
                                         .font(Font.system(size: 10))
                                 }
                             }

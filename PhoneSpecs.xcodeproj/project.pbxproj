@@ -22,6 +22,12 @@
 		A69E1E0B2C18493200B3C376 /* InterestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E1E0A2C18493200B3C376 /* InterestScreen.swift */; };
 		A69E1E0D2C184DA100B3C376 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E1E0C2C184DA100B3C376 /* Interest.swift */; };
 		A69E1E112C1851EB00B3C376 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */; };
+		A6B0591D2C25283600617186 /* Latest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0591C2C25283600617186 /* Latest.swift */; };
+		A6B0591F2C25293500617186 /* LatestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0591E2C25293500617186 /* LatestViewModel.swift */; };
+		A6B059212C25341800617186 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B059202C25341800617186 /* Popular.swift */; };
+		A6B059232C2534DA00617186 /* PopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B059222C2534DA00617186 /* PopularViewModel.swift */; };
+		A6B059272C255A0600617186 /* PopularScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B059262C255A0600617186 /* PopularScreen.swift */; };
+		A6B059292C25657600617186 /* PhoneScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B059282C25657600617186 /* PhoneScreen.swift */; };
 		A6DD44852C1978B20064866B /* PhoneItemShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44842C1978B20064866B /* PhoneItemShimmer.swift */; };
 		A6DD44872C1983760064866B /* PhoneItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44862C1983760064866B /* PhoneItem.swift */; };
 		A6DD44AD2C19A6540064866B /* DiscoveryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD44A12C19A6540064866B /* DiscoveryHelper.swift */; };
@@ -55,6 +61,12 @@
 		A69E1E0A2C18493200B3C376 /* InterestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestScreen.swift; sourceTree = "<group>"; };
 		A69E1E0C2C184DA100B3C376 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		A6B0591C2C25283600617186 /* Latest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latest.swift; sourceTree = "<group>"; };
+		A6B0591E2C25293500617186 /* LatestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestViewModel.swift; sourceTree = "<group>"; };
+		A6B059202C25341800617186 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		A6B059222C2534DA00617186 /* PopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewModel.swift; sourceTree = "<group>"; };
+		A6B059262C255A0600617186 /* PopularScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularScreen.swift; sourceTree = "<group>"; };
+		A6B059282C25657600617186 /* PhoneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneScreen.swift; sourceTree = "<group>"; };
 		A6DD44842C1978B20064866B /* PhoneItemShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneItemShimmer.swift; sourceTree = "<group>"; };
 		A6DD44862C1983760064866B /* PhoneItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneItem.swift; sourceTree = "<group>"; };
 		A6DD44A12C19A6540064866B /* DiscoveryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryHelper.swift; sourceTree = "<group>"; };
@@ -146,6 +158,8 @@
 				A6778E452C11A59900F0D196 /* Brand.swift */,
 				A69E1E012C18292100B3C376 /* Phone.swift */,
 				A69E1E0C2C184DA100B3C376 /* Interest.swift */,
+				A6B0591C2C25283600617186 /* Latest.swift */,
+				A6B059202C25341800617186 /* Popular.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +170,8 @@
 				A69E1E042C183CB600B3C376 /* BrandViewModel.swift */,
 				A69E1E102C1851EB00B3C376 /* PhoneViewModel.swift */,
 				A69E1E082C1847D500B3C376 /* InterestViewModel.swift */,
+				A6B0591E2C25293500617186 /* LatestViewModel.swift */,
+				A6B059222C2534DA00617186 /* PopularViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -199,6 +215,8 @@
 				A62861842C16FF63000A6F5E /* BrandScreen.swift */,
 				A69E1DFF2C18270800B3C376 /* PhoneListScreen.swift */,
 				A69E1E0A2C18493200B3C376 /* InterestScreen.swift */,
+				A6B059262C255A0600617186 /* PopularScreen.swift */,
+				A6B059282C25657600617186 /* PhoneScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -288,9 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B0591D2C25283600617186 /* Latest.swift in Sources */,
 				A6DD44B12C19A6540064866B /* NotificationWindow.swift in Sources */,
 				A69E1DFE2C18038900B3C376 /* Spinner.swift in Sources */,
+				A6B059292C25657600617186 /* PhoneScreen.swift in Sources */,
 				A6DD44B52C19A6540064866B /* NotificationStyle.swift in Sources */,
+				A6B059232C2534DA00617186 /* PopularViewModel.swift in Sources */,
 				A69E1E112C1851EB00B3C376 /* PhoneViewModel.swift in Sources */,
 				A6DD44AF2C19A6540064866B /* NotificationView.swift in Sources */,
 				A6778E302C119C0E00F0D196 /* PhoneSpecsApp.swift in Sources */,
@@ -298,10 +319,12 @@
 				A69E1E052C183CB600B3C376 /* BrandViewModel.swift in Sources */,
 				A6E5F8DC2C12BCD1006FC8A9 /* ContentView.swift in Sources */,
 				A69E1E022C18292100B3C376 /* Phone.swift in Sources */,
+				A6B059212C25341800617186 /* Popular.swift in Sources */,
 				A6DD44B42C19A6540064866B /* NotificationPresenterLegacyOverlay.swift in Sources */,
 				A6DD44AD2C19A6540064866B /* DiscoveryHelper.swift in Sources */,
 				A6E5F8D82C12A825006FC8A9 /* UserProfile.swift in Sources */,
 				A69E1E0D2C184DA100B3C376 /* Interest.swift in Sources */,
+				A6B059272C255A0600617186 /* PopularScreen.swift in Sources */,
 				A6DD44872C1983760064866B /* PhoneItem.swift in Sources */,
 				A6DD44B02C19A6540064866B /* NotificationViewController.swift in Sources */,
 				A6DD44AE2C19A6540064866B /* NotificationAnimator.swift in Sources */,
@@ -313,6 +336,7 @@
 				A6778E402C119EE600F0D196 /* URL.swift in Sources */,
 				A6DD44852C1978B20064866B /* PhoneItemShimmer.swift in Sources */,
 				A6DD44B32C19A6540064866B /* NotificationPresenter.swift in Sources */,
+				A6B0591F2C25293500617186 /* LatestViewModel.swift in Sources */,
 				A69E1E0B2C18493200B3C376 /* InterestScreen.swift in Sources */,
 				A69E1E002C18270800B3C376 /* PhoneListScreen.swift in Sources */,
 			);

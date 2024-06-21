@@ -1,50 +1,50 @@
 //
-//  InterestScreen.swift
+//  PopularScreen.swift
 //  PhoneSpecs
 //
-//  Created by Agis on 11/06/24.
+//  Created by Agis on 21/06/24.
 //
 
 import SwiftUI
 
-struct InterestScreen: View {
+struct PopularScreen: View {
     
-    @StateObject var interestVM = InterestViewModel(apiService: APIService.shared)
+    @StateObject var popularVM = PopularViewModel(apiService: APIService.shared)
     @State private var searchText = ""
     
     var body: some View {
         NavigationView {
             ZStack {
-                if(interestVM.isLoading){
+                if(popularVM.isLoading){
                     Spinner()
                 }
                 
                 VStack {
-                    List(Array(zip(searchInterestPhone.indices, interestVM.response.data.phones)), id: \.0) {index, data in
+                    List(Array(zip(searchPopularPhone.indices, popularVM.response.data.phones)), id: \.0) {index, data in
                         NavigationLink(destination: {
                             PhoneScreen(url: data.detail)
                         }) {
                             HStack(alignment: .center) {
                                 ZStack {
                                     Circle()
-                                        .foregroundColor(.colorGreen.opacity(0.20))
+                                        .foregroundColor(Color("ColorGreen").opacity(0.20))
                                         .frame(width: 35, height: 35)
                                     
                                     Text("\(index+1)")
-                                        .foregroundColor(.colorGreen)
+                                        .foregroundColor(Color("ColorGreen"))
                                         .font(Font.system(size: 15))
                                 }
                                 VStack(alignment: .leading) {
                                     Text(data.phoneName).padding(.bottom, 0.5)
-                                    Text("\(data.hits) Hits")
+                                    Text("\(data.favorites) Liked")
                                             .font(.system(size: 15))
-                                            .foregroundColor(.colorGreen)
+                                            .foregroundColor(Color("ColorGreen"))
                                 }.padding(.leading, 5)
                             }
                         }
                     }.task {
                         do {
-                            try await interestVM.getInterestPhone()
+                            try await popularVM.getPopularPhone()
                         } catch {
                             print(error.localizedDescription)
                         }
@@ -52,22 +52,22 @@ struct InterestScreen: View {
                     .listStyle(.plain)
                 }
                 .searchable(text: $searchText)
-                .navigationTitle("Most Daily Interest")
+                .navigationTitle("Most Favorite by Fans")
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
     
     // Search
-    var searchInterestPhone: [Interest]{
+    var searchPopularPhone: [Popular]{
         if(searchText.isEmpty){
-            interestVM.response.data.phones
+            popularVM.response.data.phones
         }else{
-            interestVM.response.data.phones.filter { $0.phoneName.localizedStandardContains(searchText) }
+            popularVM.response.data.phones.filter { $0.phoneName.localizedStandardContains(searchText) }
         }
     }
 }
 
 #Preview {
-    InterestScreen()
+    PopularScreen()
 }

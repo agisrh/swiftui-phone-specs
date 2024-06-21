@@ -1,16 +1,16 @@
 //
-//  Phone.swift
+//  Latest.swift
 //  PhoneSpecs
 //
-//  Created by Agis on 11/06/24.
+//  Created by Agis on 21/06/24.
 //
 
 import Foundation
 
-// Phone Response Model
-struct InterestResponse: Codable {
+// Latest Response Model
+struct LatestResponse: Codable {
     let status: Bool
-    let data: InterestBaseData
+    let data: LatestBaseData
     
     enum CodingKeys: String, CodingKey {
         case status
@@ -19,10 +19,10 @@ struct InterestResponse: Codable {
 }
 
 
-// Phone Base Data Model
-struct InterestBaseData: Codable {
+// Latest Base Data Model
+struct LatestBaseData: Codable {
     let title: String
-    let phones: [Interest]
+    let phones: [Latest]
     
     enum CodingKeys: String, CodingKey {
         case title
@@ -30,44 +30,40 @@ struct InterestBaseData: Codable {
     }
 }
 
-extension InterestBaseData {
+extension LatestBaseData {
     init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         title = try values.decode(String.self, forKey: .title)
-        phones = try values.decode([Interest].self, forKey: .phones)
+        phones = try values.decode([Latest].self, forKey: .phones)
     }
 }
 
-
 // List Phone Model
-var interestId: Int = 1
-struct Interest: Codable {
-    let id: Int
+struct Latest: Codable, Identifiable {
+    let id = UUID()
     let phoneName: String
     let slug: String
-    let hits: Int
+    let image: String
     let detail: String
     
     enum CodingKeys: String, CodingKey {
         case phoneName = "phone_name"
         case slug
-        case hits
+        case image
         case detail
     }
 }
 
 
-extension Interest {
+extension Latest {
     init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = interestId
         phoneName = try values.decode(String.self, forKey: .phoneName)
         slug = try values.decode(String.self, forKey: .slug)
-        hits = try values.decode(Int.self, forKey: .hits)
+        image = try values.decode(String.self, forKey: .image)
         detail = try values.decode(String.self, forKey: .detail)
-        interestId += 1
     }
 }

@@ -28,11 +28,11 @@ struct BottomBar: View {
                 Image(systemName: "flame");
                 Text("Interest")
             }
-            HomeScreen().tabItem {
-                Image(systemName: "person.circle");
-                Text("Account")
+            PopularScreen().tabItem {
+                Image(systemName: "arrow.up.heart.fill");
+                Text("Favorite")
             }
-        }.accentColor(Color("ColorPrimary"))
+        }.accentColor(.colorGreen)
     }
 }
 
